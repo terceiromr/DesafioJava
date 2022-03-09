@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decimo Desafio de JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1>DECIMO DESAFIO</h1>
+
+    <button onclick="inicio()">Resolvendo bahskara!</button>
+    
+    <section id="reajuste">
+
+        <p>Considerando uma equacao no formato<b>ax²+bx+c=0</b>, aperte o botao acima para calcular o valor de Delta.</p>
+
+    </section>
+    
+
+    <script>
+
+        function inicio() {
+
+            let a = window.prompt('Qual o valor de A ?')
+
+            let b = window.prompt('Qual o valor de B ?')
+
+            let c = window.prompt('Qual o valor de C ?')
+            
+            let resp = (b*b)-4*(a*c)
+            let res = window.document.getElementById('reajuste')
+
+            res.innerHTML = `<h2>Resolvendo bahskara!</h2><p>A equacao atual e <b>${a}x²+${b}x+${c}=0</b></p><p>O calculo realizado sera<b> Δ=${b}²-4.${a}.${c}</b></p><p>O valor calculado foi de Δ=${resp} </p>`
+
+   
+
+        }
+
+    </script>  
+
+</body>
+
+</html>

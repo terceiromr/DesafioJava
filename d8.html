@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oitavo Desafio de JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1>OITAVO DESAFIO</h1>
+
+    <button onclick="inicio()">Desconto de 10%</button>
+    
+    <section id="desconto">
+
+        <p>Clique no botao acima para iniciar ...</p>
+
+    </section>
+    
+
+    <script>
+
+        function inicio() {
+
+            let prod = window.prompt('Qual produto voce deseja comprar ?')
+
+            let v1 = window.prompt(`Quanto custa o ${prod} que voce esta comprando ?`)
+
+            let desc = v1/10
+            let total = v1 - desc
+            let res = window.document.getElementById('desconto')
+
+            res.innerHTML = `<h2>Calculando desconto de 10% para ${prod}.</h2><p>O preco original era de R$${v1}!</p><p>Voce acaba de ganhar R$${desc} de desconto (-10%)</p><p>No fim. Voce vai pagar R$${total} no produto ${prod} </p>`
+
+   
+
+        }
+
+    </script>  
+
+</body>
+
+</html>

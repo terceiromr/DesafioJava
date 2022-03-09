@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nono Desafio de JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1>NONO DESAFIO</h1>
+
+    <button onclick="inicio()">Reajuste salarial!</button>
+    
+    <section id="reajuste">
+
+        <p>Clique no botao acima para iniciar ...</p>
+
+    </section>
+    
+
+    <script>
+
+        function inicio() {
+
+            let func = window.prompt('Qual o nome do funcionario  ?')
+
+            let sal = window.prompt(`Qual o salario de ${func} ?`)
+
+            let reaj = window.prompt(`O salario de ${func} vai ser reajustado em quantos % ?`)
+            
+            let por = (sal * reaj)/100
+            let total = (sal * 1)+por
+            let res = window.document.getElementById('reajuste')
+
+            res.innerHTML = `<h2>${func} recebeu um aumento salarial !</h2><p>O salario atual era de R$${sal}.</p><p>Com o aumento de ${reaj}%, o salario vai aumentar R$${por} no proximo mes! </p><p>E a partir dai, ${func} passa a ganhar R$${Math.round(total)}.</p>`
+
+   
+
+        }
+
+    </script>  
+
+</body>
+
+</html>

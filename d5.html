@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinto Desafio de JavaScript</title>
+</head>
+<body>
+    <h1>QUINTO DESAFIO</h1>
+    <button onclick="inicio()">CONVERSOR</button>
+    <section id="conversor">
+        <p>Clique no botao acima para iniciar o conversor ...</p>
+    </section>
+    <script>
+        function inicio() {
+            let m1 = window.prompt('Digite uma distancia em metros (m) ')
+            let km = m1 / 1000
+            let hm = m1 / 100
+            let dam = m1 / 10
+            let dm = m1 * 10
+            let cm = m1 * 100
+            let mm = m1 * 1000
+            let res = window.document.getElementById('conversor')
+            res.innerHTML = `<h2>A distancia de ${m1} metros, corresponde a ...</h2><p>${km} Kilometros(km)</p><p>${hm} Hectometros(Hm)</p><p>${dam} Decametros(Dam)</p><p>${dm} Decimetros(dm)</p><p>${cm} Centimetros(cm)</p><p>${mm} Milimetros(mm)</p>`
+        }
+    </script>  
+</body>
+</html>

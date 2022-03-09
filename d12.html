@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decimo Segundo Desafio de JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1>DECIMO SEGUNDO DESAFIO</h1>
+
+    <button onclick="inicio()">Preco mudou!</button>
+    
+    <section id="reajuste">
+
+        <p>Clique no botao acima para analizar a mudanca de preco.</p>
+
+    </section>
+    
+
+    <script>
+
+        function inicio() {
+
+            let a = window.prompt('Qual o preco anterior do produto?')
+
+            let b = window.prompt('Qual o preco atual do produto ?')
+            
+            let resp = a - b
+            let por = ((b - a)/a)*100
+            let res = window.document.getElementById('reajuste')
+
+            res.innerHTML = `<h2>Analisando o valor do produto!</h2><p>O produto custava R$${a}</p><p>Hoje o produto custa R$${b}</p><p>A mudanca no preco do produto e de R$${resp}</p><p>A porcentagem da mudanca e de ${Math.round(por)}%.</p>`
+
+   
+
+        }
+
+    </script>  
+
+</body>
+
+</html>

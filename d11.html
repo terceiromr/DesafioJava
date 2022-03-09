@@ -1,0 +1,12 @@
+<head> 
+<title> Ani bissexto </title>
+ </head>
+  <body> Insira o ano: <input type="text" id = "ano"/> 
+<input type="button" id="button" onClick="bissexto()" value="Check Leap Year"> <p id="GFG"></p>
+   <script> 
+   function bissexto() { 
+   let ano = document.getElementById("ano").value; document.getElementById("GFG").innerHTML = (ano % 100 === 0) ? (ano % 400 === 0) : (ano % 4 === 0);
+    }
+     </script> 
+   </body> 
+   </html>

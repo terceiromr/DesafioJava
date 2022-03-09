@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto Desafio de JavaScript</title>
+</head>
+<body>
+    <h1>QUARTO DESAFIO</h1>
+    <button onclick="inicio()">COMPRAR PRODUTO</button>
+    <script>
+        function inicio() {
+            let prod = window.prompt('Qual produto voce deseja comprar ?')
+            let v1 = window.prompt(`Quanto custa o ${prod} que voce esta comprando ?`)
+            let v2 = window.prompt(`Qual foi o valor que voce deu para pagar ${prod} ?`)
+            let troco = v2 - v1
+            window.alert(`Voce comprou ${prod} que custou R$${v1}.\n Deu R$${v2} em dinheiro e vai receber R$${troco} de troco. \n Volte Sempre!`)
+   
+        }
+    </script>  
+</body>
+</html>
